@@ -73,9 +73,9 @@ function App() {
     };
   return (
     <>
-      <div id="wrap" className='h-screen p-3 bg-gradient-to-b from-[#f9fcff] to-[#f8f9fd]'>
+      <div id="wrap" className='h-screen bg-gradient-to-b from-[#f9fcff] to-[#f8f9fd]'>
 
-        <div id="navbar" className='flex justify-between items-center container mt-0 pt-3'>
+        <div id="navbar" className='flex justify-between items-center container mt-0'>
           <div id="logo" className='flex items-center gap-2'>
             <img className='h-5 object-cover' src={logo} alt="" />
             <span className='font-display text-2xl text-[#060607] font-medium'>bitbye</span>
@@ -100,11 +100,11 @@ function App() {
                     className='p-2 lg:hidden'
                     onClick={handleMenu}
                 >
-                    <FontAwesomeIcon className='text-grey-600' icon={faBarsStaggered} />
+                    <FontAwesomeIcon className='text-grey-600 text-lg' icon={faBarsStaggered} />
                 </button>
         </div>
 
-        <div ref={navDialogRef} className="fixed z-20 h-screen container mt-0 pt-3 inset-0  bg-white hidden">
+        <div ref={navDialogRef} className="fixed z-20 h-screen container mt-0 inset-0  bg-white hidden">
           <div className="flex justify-between">
               <div id="logo" className='flex items-center gap-2'>
                 <img className='h-5' src={logo} alt="" />
