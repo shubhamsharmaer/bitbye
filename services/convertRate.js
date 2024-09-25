@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://bitbye.onrender.com/api/v2/rates/merchant/BTC'
+const API_URL = '/api/v2/rates/merchant/BTC'
 export const convertRate = async (amount, exchangeCurrency) => {
     try{
         const response = await axios.get(`${API_URL}/${exchangeCurrency}`, {
