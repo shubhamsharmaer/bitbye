@@ -90,7 +90,7 @@ function App() {
                   <div id="color" className='-translate-x-28  group-hover:translate-x-0 transition-all delay-100 rounded-lg w-full h-[1px] bg-[#293ef9]'></div>
           </div>
           <div className="group flex flex-col justify-center overflow-hidden items-center">
-                  <a className='text-center' target='_blank' href="">Source Code</a>
+                  <a className='text-center' target='_blank' href="https://github.com/shubhamsharmaer/bitbye">Source Code</a>
                   <div id="color" className='-translate-x-28  group-hover:translate-x-0 transition-all delay-100 rounded-lg w-full h-[1px] bg-[#293ef9]'></div>
           </div>
         
@@ -133,7 +133,7 @@ function App() {
               </div>
               <div className="flex w-full flex-col border p-6 rounded-xl gap-4 text-xl mt-6">
                 <div className="flex justify-between items-center">
-                  <a className='text-left' target='_blank' href="">Source Code</a>
+                  <a className='text-left' target='_blank' href="https://github.com/shubhamsharmaer/bitbye">Source Code</a>
                   <div id="color" className='w-1/2 rounded-lg h-4 bg-[#1c1c1c]'></div>
                 </div>
               </div>
