@@ -1,1 +1,2 @@
 VITE_API_URL=/api/v2/rates/merchant/BTC
+VITE_PROXY_URL=https://cors-anywhere.herokuapp.com/corsdemo/proxy
