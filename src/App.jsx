@@ -4,7 +4,7 @@ import { getMarketRates } from '../services/getMarketRates';
 import { convertRate } from '../services/convertRate';
 import logo from './assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBarsStaggered, faClose, faCircleArrowRight, faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faBarsStaggered, faClose, faCircleArrowRight, faCircleArrowLeft, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import {  faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import arrow from './assets/arrow.svg'
 import loop from './assets/loop.svg'
@@ -19,6 +19,7 @@ function App() {
     const [amount, setAmount] = useState('');
     const [selectedCurrency, setSelectedCurrency] = useState('USD');
     const [isDropdownVisible, setIsDropdownVisible] = useState(false); // state to control dropdown visibility
+    const [loading, setLoading] = useState(false);
 
     const currencies = ['USD', 'EUR', 'CZK', 'CHF', 'AUD', 'CAD'];
     // handling market rates
@@ -42,13 +43,15 @@ function App() {
 
     // handle form submission
     const handleSubmit = async (e) => {
+      setLoading(true);
       e.preventDefault();
-      if(!amount){
-        setError('Please enter an amount');
+      if(!amount || !isFinite(amount)){
+        setError('Please enter a valid amount');
         return;
       }
       try{
         const convertedRate = await convertRate(amount, selectedCurrency);
+        setLoading(false);
         setConvertedRate(convertedRate);
       } catch(error){
         console.error('Error while converting rates', error);
@@ -171,11 +174,11 @@ function App() {
                     <div className="flex flex-col gap-4">
                     
                     <div className="flex justify-between">
-                        <input type="text"
+                        <input type="number"
                           required
                           value={amount} 
                           onChange={(e) => setAmount(e.target.value)} 
-                          className='border-b text-2xl bg-transparent w-4/5 focus:outline-none'
+                          className='focus:appearance-none border-b text-2xl bg-transparent w-4/5 focus:outline-none'
                         />
                         <span className='text-[#7c859a] text-2xl'>BTC</span>
                     </div>
@@ -189,7 +192,11 @@ function App() {
                   </div>
 
                   <div id="sign" className='flex justify-center items-center'>
+                    {loading ? 
+                    <FontAwesomeIcon className='h-8 md:h-10 text-[#040404] animate-spin' icon={faSpinner} />
+                    :
                     <FontAwesomeIcon className='h-8 md:h-10 text-[#040404]' icon={faCircleArrowRight} />
+                    }
                   </div>
 
                   <div id="got" className='flex flex-col p-6 justify-center items-start gap-4'>

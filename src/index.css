@@ -14,5 +14,18 @@
     .container {
         @apply px-6 py-8 md:max-w-7xl mt-8 mx-auto lg:px-8 lg:py-10 lg:mt-14
     }
+
+    /* Hide number input spinner for Chrome, Safari, Edge */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Hide number input spinner for Firefox */
+    input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 }
 
