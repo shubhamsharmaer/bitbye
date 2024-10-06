@@ -62,10 +62,16 @@ function App() {
     const handleCurrencyChange = (currency) => {
       setSelectedCurrency(currency);
       setIsDropdownVisible(false); // Hide dropdown after selection
+      setLoading(false);
+      setConvertedRate(null);
     };
 
-    const handleDropdownToggle = () => {
+    const handleDropdownToggle = (e) => {
+        // stop loading
+        setLoading(false);
+        e.stopPropagation();
         setIsDropdownVisible(!isDropdownVisible); // Toggle dropdown visibility
+        // setConvertedRate(null);
     };
 
     const navDialogRef = useRef(null); 
@@ -213,6 +219,7 @@ function App() {
                         <span className='text-[#7c859a] text-2xl'>
 
                         <button
+                              type='button'
                               onClick={handleDropdownToggle}
                               className='flex items-center'
                             >
