@@ -1,6 +1,13 @@
 # Bitbye
 
-**Bitbye** is a streamlined web application designed to facilitate easy cryptocurrency conversions. Users can effortlessly input the amount they wish to convert, select their desired currencies, and receive real-time conversion results. Powered by the CoinGate API, Bitbye ensures accuracy by fetching the latest cryptocurrency market rates, providing users with reliable and instant conversion data through a user-friendly interface. Whether you are trading, monitoring rates, or simply converting values, Bitbye makes it simple and intuitive for both novice and experienced users.
+**Bitbye** is a streamlined web application designed to facilitate easy cryptocurrency conversions. Users can effortlessly input the amount they wish to convert, select their desired currencies, and receive real-time conversion results. 
+
+![271shots_so](https://github.com/user-attachments/assets/73b7b432-c93a-465d-bc59-6e616ee0ab1b)
+
+
+Powered by the `CoinGate API`, Bitbye ensures accuracy by fetching the latest cryptocurrency market rates, providing users with reliable and instant conversion data through a user-friendly interface. Whether you are trading, monitoring rates, or simply converting values, Bitbye makes it simple and intuitive for both novice and experienced users.
+
+
 
 ## Table of Contents
 
