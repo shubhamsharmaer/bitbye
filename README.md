@@ -1,23 +1,24 @@
 # Bitbye
 
-Bitbye is a web application that allows users to convert cryptocurrency rates with ease. It provides a simple and intuitive interface for users to input the amount they want to convert and select the desired currency. The application fetches the latest market rates from the CoinGate API and performs the conversion in real-time.
+**Bitbye** is a streamlined web application designed to facilitate easy cryptocurrency conversions. Users can effortlessly input the amount they wish to convert, select their desired currencies, and receive real-time conversion results. Powered by the CoinGate API, Bitbye ensures accuracy by fetching the latest cryptocurrency market rates, providing users with reliable and instant conversion data through a user-friendly interface. Whether you are trading, monitoring rates, or simply converting values, Bitbye makes it simple and intuitive for both novice and experienced users.
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+| Section          | Description                                        |
+|------------------|----------------------------------------------------|
+| [Run Locally](#run-locally) | Instructions on how to set up and run the project locally. |
+| [Possible Error](#possible-error) | Information on potential errors and troubleshooting. |
+| [Usage](#usage)  | How to use the application for cryptocurrency conversion. |
+| [Features](#features) | Overview of key features and functionalities of the app. |
+| [Contributing](#contributing) | Guidelines on how to contribute to the project. |
 
-## Installation
+## Run Locally
 
 To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```shell
-   git clone https://github.com/your-username/bitbye.git
+   git clone https://github.com/shubhamsharmaer/bitbye.git
    ```
 
 2. Navigate to the project directory:
@@ -25,13 +26,11 @@ To run this project locally, follow these steps:
    cd bitbye
    ```
 
-3. Create a new file named `.env` in the root directory and add the following environment variables:
+3. Create a new file named `.env` in the root directory and copy the environment variables from `.envSample`
    ```makefile
-   COINGATE_API_KEY=YOUR_API_KEY
-   COINGATE_API_SECRET=YOUR_API_SECRET
+   VITE_API_URL=/api/v2/rates/merchant/BTC
+   VITE_PROXY_URL=https://cors-anywhere.herokuapp.com/corsdemo/proxy
    ```
-
-   Replace `YOUR_API_KEY` and `YOUR_API_SECRET` with your actual CoinGate API credentials.
 
 4. Install the dependencies:
    ```shell
@@ -43,7 +42,12 @@ To run this project locally, follow these steps:
    npm run dev
    ```
 
-   This will start the application on `http://localhost:3000`.
+   This will start the application on `http://localhost:5173`.
+
+## Possible Error
+   - If the conversion do not work then try to go [HERE](https://cors-anywhere.herokuapp.com/corsdemo)
+   - And click on `Request temporary access to the demo server`
+   - Try `npm run dev` again
 
 ## Usage
 
@@ -63,14 +67,6 @@ To run this project locally, follow these steps:
 - Allows users to convert cryptocurrency rates in real-time.
 - Provides a simple and intuitive user interface.
 - Supports multiple currencies for conversion.
-
-## Technologies Used
-
-- React: A JavaScript library for building user interfaces.
-- Vite: A build tool for modern web applications.
-- Tailwind CSS: A utility-first CSS framework.
-- Axios: A promise-based HTTP client for making API requests.
-- ESLint: A pluggable JavaScript linter.
 
 ## Contributing
 
