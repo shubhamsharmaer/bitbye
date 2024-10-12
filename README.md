@@ -36,7 +36,7 @@ Before running the Bitbye application, ensure your system meets the following re
 | [✨ Features](#features) | Overview of key features and functionalities of the app. |
 | [🤝 Contributing](#contributing) | Guidelines on how to contribute to the project. |
 
-## Run Locally
+## 🚀 Run Locally
 
 To run this project locally, follow these steps:
 
