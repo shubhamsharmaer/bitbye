@@ -9,15 +9,15 @@ Powered by the `CoinGate API`, Bitbye ensures accuracy by fetching the latest cr
 
 
 
-## Table of Contents
+## 📑 Table of Contents
 
 | Section          | Description                                        |
 |------------------|----------------------------------------------------|
-| [Run Locally](#run-locally) | Instructions on how to set up and run the project locally. |
-| [Possible Error](#possible-error) | Information on potential errors and troubleshooting. |
-| [Usage](#usage)  | How to use the application for cryptocurrency conversion. |
-| [Features](#features) | Overview of key features and functionalities of the app. |
-| [Contributing](#contributing) | Guidelines on how to contribute to the project. |
+| [🚀 Run Locally](#run-locally) | Instructions on how to set up and run the project locally. |
+| [⚠️ Possible Error](#possible-error) | Information on potential errors and troubleshooting. |
+| [📖 Usage](#usage)  | How to use the application for cryptocurrency conversion. |
+| [✨ Features](#features) | Overview of key features and functionalities of the app. |
+| [🤝 Contributing](#contributing) | Guidelines on how to contribute to the project. |
 
 ## Run Locally
 
