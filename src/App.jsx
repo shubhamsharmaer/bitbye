@@ -156,7 +156,7 @@ function App() {
                 rounded-lg bg-blue-50 px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-2 
                 transition group">
                     <div className="dot w-2 h-2 bg-[#36f0fc] border rounded-full border-[#293ef9]"></div>
-                    <p className='text-blue-600 font-medium'>v0.1.0: 
+                    <p className='text-blue-600 font-medium'>v1.1.0: 
                     <span className='text-blue-700 font-bold' > New Alerts Feature Added</span></p>
                     <span className='text-blue-600 '><img src={sparkles} alt="" /></span>
             </div>
