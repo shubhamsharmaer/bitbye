@@ -30,11 +30,11 @@ Before running the Bitbye application, ensure your system meets the following re
 
 | Section          | Description                                        |
 |------------------|----------------------------------------------------|
-| [🚀 Run Locally](#run-locally) | Instructions on how to set up and run the project locally. |
-| [⚠️ Possible Error](#possible-error) | Information on potential errors and troubleshooting. |
-| [📖 Usage](#usage)  | How to use the application for cryptocurrency conversion. |
-| [✨ Features](#features) | Overview of key features and functionalities of the app. |
-| [🤝 Contributing](#contributing) | Guidelines on how to contribute to the project. |
+| [🚀 Run Locally](#-run-locally) | Instructions on how to set up and run the project locally. |
+| [⚠️ Possible Error](#-possible-error) | Information on potential errors and troubleshooting. |
+| [📖 User Guide](#-user-guide)  | How to use the application for cryptocurrency conversion. |
+| [✨ Features](#-features) | Overview of key features and functionalities of the app. |
+| [🤝 Contributing](#-contributing) | Guidelines on how to contribute to the project. |
 
 ## 🚀 Run Locally
 
@@ -68,12 +68,12 @@ To run this project locally, follow these steps:
 
    This will start the application on `http://localhost:5173`.
 
-## Possible Error
+## ⚠️ Possible Error
    - If the conversion does not work then try to go [cors-anywhere](https://cors-anywhere.herokuapp.com/corsdemo)
    - And click on `Request temporary access to the demo server`
    - Then try `npm run dev` and conversion again
 
-## Usage
+## 📖 User Guide
 
 1. Open the application in your browser.
 
@@ -85,14 +85,14 @@ To run this project locally, follow these steps:
 
 5. You can also select a different currency to convert back to the original currency.
 
-## Features
+## ✨ Features
 
 - Fetches the latest market rates from the CoinGate API.
 - Allows users to convert cryptocurrency rates in real-time.
 - Provides a simple and intuitive user interface.
 - Supports multiple currencies for conversion.
 
-## Contributing
+## 🤝 Contributing
 You can help improve code quality, fix bugs, or add new features to make the app more robust.
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
