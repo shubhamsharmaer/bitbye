@@ -1,4 +1,4 @@
-# Bitbye
+![961shots_so](https://github.com/user-attachments/assets/a42f6466-2fe1-4c01-a1db-8791cc74cd5a)
 
 **Bitbye** is a streamlined web application designed to facilitate easy cryptocurrency conversions. Users can effortlessly input the amount they wish to convert, select their desired currencies, and receive real-time conversion results. 
 
@@ -52,9 +52,9 @@ To run this project locally, follow these steps:
    This will start the application on `http://localhost:5173`.
 
 ## Possible Error
-   - If the conversion do not work then try to go [HERE](https://cors-anywhere.herokuapp.com/corsdemo)
+   - If the conversion does not work then try to go [cors-anywhere](https://cors-anywhere.herokuapp.com/corsdemo)
    - And click on `Request temporary access to the demo server`
-   - Try `npm run dev` again
+   - Then try `npm run dev` and conversion again
 
 ## Usage
 
