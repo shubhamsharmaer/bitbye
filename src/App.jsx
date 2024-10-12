@@ -4,12 +4,13 @@ import { getMarketRates } from '../services/getMarketRates';
 import { convertRate } from '../services/convertRate';
 import logo from './assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBarsStaggered, faClose, faCircleArrowRight, faCircleArrowLeft, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faBarsStaggered, faClose, faCircleArrowRight, faCircleArrowLeft, faSpinner, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {  faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import arrow from './assets/arrow.svg'
 import loop from './assets/loop.svg'
 import clock from './assets/clock.svg'
 import down from './assets/down.svg'
+import sparkles from './assets/sparkles.svg'
 
 
 function App() {
@@ -150,6 +151,16 @@ function App() {
           
         </div>
 
+        <div id="alerts" className='contianer flex w-full justify-center items-center'>
+          <div id='ver-txt' className="cursor-pointer flex my-6 gap-2 items-center border border-[#293ef9] 
+                rounded-lg bg-blue-50 px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-2 
+                transition group">
+                    <div className="dot w-2 h-2 bg-[#36f0fc] border rounded-full border-[#293ef9]"></div>
+                    <p className='text-blue-600 font-medium'>v0.1.0: 
+                    <span className='text-blue-700 font-bold' > New Alerts Feature Added</span></p>
+                    <span className='text-blue-600 '><img src={sparkles} alt="" /></span>
+            </div>
+        </div>
 
         <div id='hero' className="container mt-4">
           <div className="grid grid-rows-1 md:grid-cols-2 gap-14 md:gap-0 items-center justify-center">
